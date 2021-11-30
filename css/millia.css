@@ -1,0 +1,187 @@
+:root {
+  --primary-color: #5A2328;
+  --secondary-color: #252526;
+}
+
+body {
+  background: var(--primary-color);
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+section {
+  padding: 2.5em 1em;
+}
+
+.navbar {
+  background: var(--secondary-color);
+  padding: 1em;
+}
+
+.navbar .logo {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  font-size: 2em;
+}
+
+.navbar nav {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  width: 50%;
+  background: var(--secondary-color);
+  right: 0;
+  top: 0;
+  height: 60vh;
+  padding: 1em;
+}
+
+.navbar nav li {
+  margin-top: .7em;
+}
+
+.navbar nav li a {
+  text-decoration: none;
+  display: block;
+  padding: .5em;
+  text-align: right;
+  font-size: 1.2em;
+}
+
+.navbar nav li a:hover {
+  font-weight: bold;
+}
+
+.navbar nav.mobile-btn {
+  display: block;
+}
+
+.navbar .mobile-menu-exit {
+  float: right;
+  margin-right: 1em;
+  cursor: pointer;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.navbar .mobile-menu {
+  cursor: pointer;
+}
+
+.normals-description {
+  text-align: center;
+}
+
+.normals-description .above-caption {
+  font-weight: bold;
+  color: #a19e9e;
+  letter-spacing: .2em;
+}
+
+.normals-description h1 {
+  font-size: 2.5em;
+  color: white;
+  margin-top: .1em;
+  text-decoration: underline;
+}
+
+.normals-description h2 {
+  font-size: 2.0em;
+  text-align: left;
+  font-style: italic;
+  text-decoration: underline;
+  color: white;
+  margin-top: .1em;
+}
+
+.normals-description h3 {
+  font-size: 1.5em;
+  text-decoration: underline;
+  color: white;
+  margin-top: .1em;
+}
+
+.normals-description img {
+  width: 15em;
+}
+
+.normals-description p {
+  font-size: 1em;
+  color: white;
+  margin-top: .1em;
+}
+
+.copyright {
+  padding: .1em;
+  text-align: center;
+}
+
+.copyright .container {
+  font-size: .7em;
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu, .mobile-menu-exit {
+    display: none;
+  }
+  .navbar .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 180px auto;
+        grid-template-columns: 180px auto;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  .navbar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar nav hr {
+    display: none;
+  }
+  .navbar nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar nav li {
+    margin-top: 0;
+  }
+  .navbar nav li.current a {
+    font-weight: bold;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .container {
+    width: 1080px;
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=millia.css.map */

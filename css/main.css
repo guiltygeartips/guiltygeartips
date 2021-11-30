@@ -1,0 +1,262 @@
+:root {
+  --primary-color: #5A2328;
+  --secondary-color: #252526;
+}
+
+body {
+  background: var(--primary-color);
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+section {
+  padding: 2.5em 1em;
+}
+
+.navbar {
+  background: var(--secondary-color);
+  padding: 1em;
+}
+
+.navbar .logo {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  font-size: 2em;
+}
+
+.navbar nav {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  width: 50%;
+  background: var(--secondary-color);
+  right: 0;
+  top: 0;
+  height: 60vh;
+  padding: 1em;
+}
+
+.navbar nav li {
+  margin-top: .7em;
+}
+
+.navbar nav li a {
+  text-decoration: none;
+  display: block;
+  padding: .5em;
+  text-align: right;
+  font-size: 1.2em;
+}
+
+.navbar nav li a:hover {
+  font-weight: bold;
+}
+
+.navbar nav.mobile-btn {
+  display: block;
+}
+
+.navbar .mobile-menu-exit {
+  float: right;
+  margin-right: 1em;
+  cursor: pointer;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.navbar .mobile-menu {
+  cursor: pointer;
+}
+
+.hero {
+  text-align: center;
+}
+
+.left-col .above-caption {
+  font-weight: bold;
+  color: #a19e9e;
+  letter-spacing: .2em;
+}
+
+.left-col h1 {
+  font-size: 2em;
+  color: white;
+  margin-top: .1em;
+}
+
+.left-col .basics-cta {
+  background: var(--secondary-color);
+  color: white;
+  text-decoration: none;
+  padding: .6em 1.3em;
+  font-size: 1.4em;
+  border-radius: 5em;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.hero-img {
+  width: 50%;
+  margin-top: .2em;
+}
+
+.characters-section {
+  background: var(--secondary-color);
+  text-align: center;
+}
+
+.guides .above-caption {
+  font-weight: bold;
+  color: #a19e9e;
+  letter-spacing: .2em;
+}
+
+.guides h1 {
+  font-size: 2.5em;
+  color: white;
+  margin-top: .1em;
+  margin-bottom: .1em;
+}
+
+.learning-tools {
+  margin: 0;
+  padding-left: .1em;
+}
+
+.learning-tools li {
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+  letter-spacing: .1em;
+  padding: .3em;
+}
+
+.millia-example {
+  width: 40%;
+  margin-top: .2em;
+}
+
+.example-cta {
+  background: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  margin-top: .7em;
+  padding: .3em 1.3em;
+  border-radius: 5em;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.copyright {
+  padding: .1em;
+  text-align: center;
+}
+
+.copyright .container {
+  font-size: .7em;
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu, .mobile-menu-exit {
+    display: none;
+  }
+  .navbar .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 180px auto;
+        grid-template-columns: 180px auto;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  .navbar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar nav hr {
+    display: none;
+  }
+  .navbar nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar nav li {
+    margin-top: 0;
+  }
+  .navbar nav li.current a {
+    font-weight: bold;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .container {
+    width: 1080px;
+    margin: 0 auto;
+  }
+  .hero .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+  }
+  .left-col {
+    margin: 3%;
+  }
+  .hero-img {
+    margin-left: 20em;
+    width: 20%;
+    float: right;
+  }
+  .characters-section .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: right;
+  }
+  .example {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  .example .millia-example {
+    float: left;
+  }
+  .example .example-cta {
+    margin-top: 20%;
+    margin-left: 5%;
+    float: left;
+  }
+  .guides {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin: 3%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
